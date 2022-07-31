@@ -1,0 +1,444 @@
+<Gauge Name="KP MCP Panel" Version="1.5">
+<Image Name="KP_MCP_Bckgrd.png"  ImageSizes="950,30,950,30"/>
+
+/* Course 1 */
+<Element>
+    <Position X="3" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0xffc81e</FontColor>
+       <Value>CRS1:</Value>
+    </GaugeText>
+</Element>
+<Element>
+    <Position X="51" Y="13"/>
+    <GaugeText>
+       <FontFace>Quartz</FontFace>
+       <FontHeight>20</FontHeight>
+       <FontColor>0xff6347</FontColor>
+       <Value>%(A:NAV1 OBS, degrees)%!03d!</Value>
+    </GaugeText>
+</Element>
+<Element>
+    <Position X="83" Y="11"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x888888</FontColor>
+       <Value>|</Value>
+    </GaugeText>
+</Element>
+<Element>
+    <Position X="93" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x888888</FontColor>
+       <Value>[FD]</Value>
+    </GaugeText>
+	<Visible>(A:AUTOPILOT FLIGHT DIRECTOR ACTIVE, Bool) 0 ==</Visible>	
+</Element>
+<Element>
+    <Position X="93" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x00FF00</FontColor>
+       <Value>[FD]</Value>
+    </GaugeText>
+	<Visible>(A:AUTOPILOT FLIGHT DIRECTOR ACTIVE, Bool) 1 ==</Visible>	
+</Element>
+<Element>
+    <Position X="125" Y="11"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x888888</FontColor>
+       <Value>|</Value>
+    </GaugeText>
+</Element>
+<Element>
+    <Position X="135" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x888888</FontColor>
+       <Value>[AT]</Value>
+    </GaugeText>
+	<Visible>(A:AUTOPILOT THROTTLE ARM, Bool) 0 ==</Visible>	
+</Element>
+<Element>
+    <Position X="135" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x00FF00</FontColor>
+       <Value>[AT]</Value>
+    </GaugeText>
+	<Visible>(A:AUTOPILOT THROTTLE ARM, Bool) 1 ==</Visible>	
+</Element>
+<Element>
+    <Position X="170" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x888888</FontColor>
+       <Value>[SP]</Value>
+    </GaugeText>
+	<Visible>(A:AUTOPILOT AIRSPEED HOLD, Bool) 0 ==</Visible>
+</Element>
+<Element>
+    <Position X="170" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x00FF00</FontColor>
+       <Value>[SP]</Value>
+    </GaugeText>
+	<Visible>(A:AUTOPILOT AIRSPEED HOLD, Bool) 1 ==</Visible>
+</Element>
+<Element>
+    <Position X="205" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0xffc81e</FontColor>
+       <Value>SPD:</Value>
+    </GaugeText>
+</Element>
+<Element>
+    <Position X="245" Y="13"/>
+    <GaugeText>
+       <FontFace>Quartz</FontFace>
+       <FontHeight>20</FontHeight>
+       <FontColor>0xff6347</FontColor>
+       <Value>%(A:AUTOPILOT AIRSPEED HOLD VAR, knots)%!03d!</Value>
+    </GaugeText>
+</Element>
+<Element>
+    <Position X="277" Y="11"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x888888</FontColor>
+       <Value>|</Value>
+    </GaugeText>
+</Element>
+<Element>
+    <Position X="287" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x888888</FontColor>
+       <Value>[HD]</Value>
+    </GaugeText>
+	<Visible>(A:AUTOPILOT HEADING LOCK, Bool) 0 ==</Visible>
+</Element>
+<Element>
+    <Position X="287" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x00FF00</FontColor>
+       <Value>[HD]</Value>
+    </GaugeText>
+	<Visible>(A:AUTOPILOT HEADING LOCK, Bool) 1 ==</Visible>
+</Element>
+<Element>
+    <Position X="325" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0xffc81e</FontColor>
+       <Value>HDG:</Value>
+    </GaugeText>
+</Element>
+<Element>
+    <Position X="369" Y="13"/>
+    <GaugeText>
+       <FontFace>Quartz</FontFace>
+       <FontHeight>20</FontHeight>
+       <FontColor>0xff6347</FontColor>
+       <Value>%(A:AUTOPILOT HEADING LOCK DIR, degrees)%!03d!</Value>
+    </GaugeText>
+</Element>
+<Element>
+    <Position X="400" Y="11"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x888888</FontColor>
+       <Value>|</Value>
+    </GaugeText>
+</Element>
+<Element>
+    <Position X="410" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0xffc81e</FontColor>
+       <Value>NAV:</Value>
+    </GaugeText>
+</Element>
+<Element>
+    <Position X="450" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x888888</FontColor>
+       <Value>[LO]</Value>
+    </GaugeText>
+	<Visible>(A:AUTOPILOT NAV1 LOCK, Bool) 0 ==</Visible>
+</Element>
+<Element>
+    <Position X="450" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x00FF00</FontColor>
+       <Value>[LO]</Value>
+    </GaugeText>
+	<Visible>(A:AUTOPILOT NAV1 LOCK, Bool) 1 ==</Visible>
+</Element>
+<Element>
+    <Position X="485" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x888888</FontColor>
+       <Value>[GS]</Value>
+    </GaugeText>
+	<Visible>(A:AUTOPILOT APPROACH HOLD, Bool) 0 ==</Visible>
+</Element>
+<Element>
+    <Position X="485" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x00FF00</FontColor>
+       <Value>[GS]</Value>
+    </GaugeText>
+	<Visible>(A:AUTOPILOT APPROACH HOLD, Bool) 1 ==</Visible>
+</Element>
+<Element>
+    <Position X="517" Y="11"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x888888</FontColor>
+       <Value>|</Value>
+    </GaugeText>
+</Element>
+<Element>
+    <Position X="530" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0xffc81e</FontColor>
+       <Value>ALT:</Value>
+    </GaugeText>
+</Element>
+<Element>
+    <Position X="565" Y="13"/>
+    <GaugeText>
+       <FontFace>Quartz</FontFace>
+       <FontHeight>20</FontHeight>
+       <FontColor>0xff6347</FontColor>
+       <Value>%(A:AUTOPILOT ALTITUDE LOCK VAR, feet)%!05d!</Value>
+    </GaugeText>
+</Element>
+<Element>
+    <Position X="620" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x888888</FontColor>
+       <Value>[AL]</Value>
+    </GaugeText>
+	<Visible>(A:AUTOPILOT ALTITUDE LOCK, Bool) 0 ==</Visible>
+</Element>
+<Element>
+    <Position X="620" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x00FF00</FontColor>
+       <Value>[AL]</Value>
+    </GaugeText>
+	<Visible>(A:AUTOPILOT ALTITUDE LOCK, Bool) 1 ==</Visible>
+</Element>
+<Element>
+    <Position X="655" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x888888</FontColor>
+       <Value>[VS]</Value>
+    </GaugeText>
+	<Visible>(A:AUTOPILOT VERTICAL HOLD, Bool) 0 ==</Visible>
+</Element>
+<Element>
+    <Position X="655" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x00FF00</FontColor>
+       <Value>[VS]</Value>
+    </GaugeText>
+	<Visible>(A:AUTOPILOT VERTICAL HOLD, Bool) 1 ==</Visible>
+</Element>
+<Element>
+    <Position X="693" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0xffc81e</FontColor>
+       <Value>VSP:</Value>
+    </GaugeText>
+</Element>
+<Element>
+    <Position X="730" Y="13"/>
+    <GaugeText>
+       <FontFace>Quartz</FontFace>
+       <FontHeight>20</FontHeight>
+       <FontColor>0xff6347</FontColor>
+       <Value>%(A:AUTOPILOT VERTICAL HOLD VAR, feet/minute) %!04d!</Value>
+    </GaugeText>
+</Element>
+
+<Element>
+    <Position X="780" Y="11"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x888888</FontColor>
+       <Value>|</Value>
+    </GaugeText>
+</Element>
+<Element>
+    <Position X="790" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x888888</FontColor>
+       <Value>[YD]</Value>
+    </GaugeText>
+	<Visible>(A:AUTOPILOT YAW DAMPER, Bool) 0 ==</Visible>
+</Element>
+<Element>
+    <Position X="790" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x00FF00</FontColor>
+       <Value>[YD]</Value>
+    </GaugeText>
+	<Visible>(A:AUTOPILOT YAW DAMPER, Bool) 1 ==</Visible>
+</Element>
+<Element>
+    <Position X="825" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x888888</FontColor>
+       <Value>[A/P]</Value>
+    </GaugeText>
+	<Visible>(A:AUTOPILOT MASTER, Bool) 0 ==</Visible>
+</Element>
+<Element>
+    <Position X="825" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0x00FF00</FontColor>
+       <Value>[A/P]</Value>
+    </GaugeText>
+	<Visible>(A:AUTOPILOT MASTER, Bool) 1 ==</Visible>
+</Element>
+
+<Mouse>
+	<Area>
+        <Area>
+            <Position X="51" Y="1"/>
+            <Size X="30" Y="22"/>
+            <Wheel DownEvent="VOR1_OBI_DEC" UpEvent="VOR1_OBI_INC"/>
+		</Area>
+		<Area>
+			<Position X="93" Y="1"/>
+			<Size X="30" Y="20"/>
+			<Click Event="TOGGLE_FLIGHT_DIRECTOR"/>
+		</Area>
+		<Area>
+			<Position X="135" Y="1"/>
+			<Size X="30" Y="20"/>
+			<Click Event="AUTO_THROTTLE_ARM"/>
+		</Area>
+		<Area>
+			<Position X="170" Y="1"/>
+			<Size X="30" Y="20"/>
+            <Click Event="AP_PANEL_SPEED_HOLD"/>
+		</Area>
+        <Area>
+            <Position X="245" Y="1"/>
+            <Size X="30" Y="22"/>
+           <Wheel DownEvent="AP_SPD_VAR_DEC" UpEvent="AP_SPD_VAR_INC"/>
+ 		</Area>
+		<Area>
+			<Position X="287" Y="1"/>
+			<Size X="30" Y="20"/>
+            <Click Event="AP_PANEL_HEADING_HOLD"/>
+		</Area>
+        <Area>
+            <Position X="369" Y="1"/>
+            <Size X="30" Y="22"/>
+			<Wheel DownEvent="HEADING_BUG_DEC" UpEvent="HEADING_BUG_INC"/>
+ 		</Area>
+		<Area>
+			<Position X="450" Y="1"/>
+			<Size X="30" Y="20"/>
+            <Click Event="AP_NAV1_HOLD"/>
+		</Area>
+		<Area>
+			<Position X="485" Y="1"/>
+			<Size X="30" Y="20"/>
+            <Click Event="AP_APR_HOLD"/>
+		</Area>
+        <Area>
+            <Position X="565" Y="1"/>
+            <Size X="40" Y="22"/>
+            <Wheel DownEvent="AP_ALT_VAR_DEC" UpEvent="AP_ALT_VAR_INC">
+              <ValueUp>100</ValueUp>
+              <ValueDown>100</ValueDown>
+            </Wheel>
+ 		</Area>
+		<Area>
+			<Position X="620" Y="1"/>
+			<Size X="30" Y="20"/>
+            <Click Event="AP_PANEL_ALTITUDE_HOLD"/>
+		</Area>
+		<Area>
+			<Position X="655" Y="1"/>
+			<Size X="30" Y="20"/>
+            <Click Event="AP_PANEL_VS_HOLD"/>
+		</Area>
+        <Area>
+            <Position X="730" Y="1"/>
+            <Size X="40" Y="22"/>
+            <Wheel DownEvent="AP_VS_VAR_DEC" UpEvent="AP_VS_VAR_INC"/>
+ 		</Area>
+		<Area>
+			<Position X="790" Y="1"/>
+			<Size X="30" Y="20"/>
+            <Click Event="YAW_DAMPER_TOGGLE"/>
+		</Area>
+		<Area>
+			<Position X="825" Y="1"/>
+			<Size X="30" Y="20"/>
+            <Click Event="AP_MASTER"/>
+		</Area>
+	</Area>
+   
+</Mouse>
+
+</Gauge>

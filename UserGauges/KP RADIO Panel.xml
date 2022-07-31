@@ -1,0 +1,194 @@
+<Gauge Name="KP RADIO Panel" Version="1.5">
+<Image Name="KP_MCP_Bckgrd.png"  ImageSizes="950,30,950,30"/>
+
+/* COM 1 */
+<Element>
+    <Position X="3" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0xffc81e</FontColor>
+       <Value>COM1:</Value>
+    </GaugeText>
+</Element>
+<Element>
+    <Position X="55" Y="13"/>
+    <GaugeText>
+       <FontFace>Quartz</FontFace>
+       <FontHeight>20</FontHeight>
+       <FontColor>0x00ff00</FontColor>
+       <Value>%(A:COM ACTIVE FREQUENCY:1,seconds) 1000000 /%!0.3f!&lt;&gt;</Value>
+    </GaugeText>
+</Element>
+<Element>
+    <Position X="143" Y="13"/>
+    <GaugeText>
+       <FontFace>Quartz</FontFace>
+       <FontHeight>20</FontHeight>
+       <FontColor>0xff6347</FontColor>
+       <Value>%(A:COM STANDBY FREQUENCY:1,seconds) 1000000 /%!0.3f!</Value>
+    </GaugeText>
+</Element>
+
+/* COM 2 */
+<Element>
+    <Position X="220" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0xffc81e</FontColor>
+       <Value>COM2:</Value>
+    </GaugeText>
+</Element>
+<Element>
+    <Position X="272" Y="13"/>
+    <GaugeText>
+       <FontFace>Quartz</FontFace>
+       <FontHeight>20</FontHeight>
+       <FontColor>0x00ff00</FontColor>
+       <Value>%(A:COM2 ACTIVE FREQUENCY:1,seconds) 1000000 /%!0.3f!&lt;&gt;</Value>
+    </GaugeText>
+</Element>
+<Element>
+    <Position X="360" Y="13"/>
+    <GaugeText>
+       <FontFace>Quartz</FontFace>
+       <FontHeight>20</FontHeight>
+       <FontColor>0xff6347</FontColor>
+       <Value>%(A:COM2 STANDBY FREQUENCY:1,seconds) 1000000 /%!0.3f!</Value>
+    </GaugeText>
+</Element>
+
+/* NAV 1 */
+<Element>
+    <Position X="437" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0xffc81e</FontColor>
+       <Value>NAV1:</Value>
+    </GaugeText>
+</Element>
+<Element>
+    <Position X="484" Y="13"/>
+    <GaugeText>
+       <FontFace>Quartz</FontFace>
+       <FontHeight>20</FontHeight>
+       <FontColor>0x00ff00</FontColor>
+       <Value>%(A:NAV ACTIVE FREQUENCY:1,seconds) 1000000 /%!0.3f!&lt;&gt;</Value>
+    </GaugeText>
+</Element>
+<Element>
+    <Position X="572" Y="13"/>
+    <GaugeText>
+       <FontFace>Quartz</FontFace>
+       <FontHeight>20</FontHeight>
+       <FontColor>0xff6347</FontColor>
+       <Value>%(A:NAV STANDBY FREQUENCY:1,seconds) 1000000 /%!0.3f!</Value>
+    </GaugeText>
+</Element>
+
+/* NAV 2 */
+<Element>
+    <Position X="650" Y="12"/>
+    <GaugeText>
+       <FontFace>Carlito</FontFace>
+       <FontHeight>18</FontHeight>
+       <FontColor>0xffc81e</FontColor>
+       <Value>NAV2:</Value>
+    </GaugeText>
+</Element>
+<Element>
+    <Position X="698" Y="13"/>
+    <GaugeText>
+       <FontFace>Quartz</FontFace>
+       <FontHeight>20</FontHeight>
+       <FontColor>0x00ff00</FontColor>
+       <Value>%(A:NAV ACTIVE FREQUENCY:2,seconds) 1000000 /%!0.3f!&lt;&gt;</Value>
+    </GaugeText>
+</Element>
+<Element>
+    <Position X="785" Y="13"/>
+    <GaugeText>
+       <FontFace>Quartz</FontFace>
+       <FontHeight>20</FontHeight>
+       <FontColor>0xff6347</FontColor>
+       <Value>%(A:NAV STANDBY FREQUENCY:2,seconds) 1000000 /%!0.3f!</Value>
+    </GaugeText>
+</Element>
+
+<Mouse>
+	<Area>
+		<Area>
+			<Position X="125" Y="1"/>
+			<Size X="20" Y="22"/>
+            <Click Event="COM_STBY_RADIO_SWAP"/>
+		</Area>
+        <Area>
+            <Position X="145" Y="1"/>
+            <Size X="40" Y="22"/>
+			<Cursor Type="DownArrow" />
+            <Wheel DownEvent="COM_RADIO_WHOLE_DEC" UpEvent="COM_RADIO_WHOLE_INC"/>
+		</Area>
+        <Area>
+            <Position X="175" Y="1"/>
+            <Size X="40" Y="22"/>
+			<Cursor Type="DownArrow" />
+            <Wheel DownEvent="COM_RADIO_FRACT_DEC" UpEvent="COM_RADIO_FRACT_INC"/>
+		</Area>
+		<Area>
+			<Position X="342" Y="1"/>
+			<Size X="20" Y="22"/>
+            <Click Event="COM2_RADIO_SWAP"/>
+		</Area>
+        <Area>
+            <Position X="362" Y="1"/>
+            <Size X="40" Y="22"/>
+			<Cursor Type="DownArrow" />
+            <Wheel DownEvent="COM2_RADIO_WHOLE_DEC" UpEvent="COM2_RADIO_WHOLE_INC"/>
+		</Area>
+        <Area>
+            <Position X="392" Y="1"/>
+            <Size X="40" Y="22"/>
+			<Cursor Type="DownArrow" />
+            <Wheel DownEvent="COM2_RADIO_FRACT_DEC" UpEvent="COM2_RADIO_FRACT_INC"/>
+		</Area>
+		<Area>
+			<Position X="559" Y="1"/>
+			<Size X="20" Y="22"/>
+            <Click Event="NAV1_RADIO_SWAP"/>
+		</Area>
+        <Area>
+            <Position X="579" Y="1"/>
+            <Size X="40" Y="22"/>
+			<Cursor Type="DownArrow" />
+            <Wheel DownEvent="NAV1_RADIO_WHOLE_DEC" UpEvent="NAV1_RADIO_WHOLE_INC"/>
+		</Area>
+        <Area>
+            <Position X="609" Y="1"/>
+            <Size X="40" Y="22"/>
+			<Cursor Type="DownArrow" />
+            <Wheel DownEvent="NAV1_RADIO_FRACT_DEC" UpEvent="NAV1_RADIO_FRACT_INC"/>
+		</Area>
+		<Area>
+			<Position X="768" Y="1"/>
+			<Size X="20" Y="22"/>
+            <Click Event="NAV2_RADIO_SWAP"/>
+		</Area>
+        <Area>
+            <Position X="788" Y="1"/>
+            <Size X="40" Y="22"/>
+			<Cursor Type="DownArrow" />
+            <Wheel DownEvent="NAV2_RADIO_WHOLE_DEC" UpEvent="NAV2_RADIO_WHOLE_INC"/>
+		</Area>
+        <Area>
+            <Position X="818" Y="1"/>
+            <Size X="40" Y="22"/>
+			<Cursor Type="DownArrow" />
+            <Wheel DownEvent="NAV2_RADIO_FRACT_DEC" UpEvent="NAV2_RADIO_FRACT_INC"/>
+		</Area>
+	</Area>
+   
+</Mouse>
+
+</Gauge>
